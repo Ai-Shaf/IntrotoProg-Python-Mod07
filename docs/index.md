@@ -42,7 +42,7 @@ An example that ties try/except/else/finally is provided by the Python documents
 We can give arguments to error types and save instances of our exceptions and their arguments as variables. Figure 5 provides a good example, from [https://www.programiz.com/python-programming/exception-handling](https://www.programiz.com/python-programming/exception-handling), that illustrates both how we can add arguments to exception errors and how we can retrieve both the exception error and argument. 
 	We can raise an error, which forces a specified exception to occur,  in the try  block and after stating it, we can add an argument in parentheses as a string. Then, in our except clause, we can state “except <error name> as <some variable name>,” followed by a colon. In the statements in that block, we can call on that variable and as shown in the example below, printing that variable will print the argument that we gave the error, rather than the error name itself. 
 	
- ![Figure 5](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/raisecustommessage.png?raw=true "Figure 5")  
+ ![Figure 5](/docs/images/raisecustommessage.png?raw=true "Figure 5")  
 **Figure 5: Exception Arguments and Variables—Source [https://www.programiz.com/python-programming/exception-handling](https://www.programiz.com/python-programming/exception-handling)**  
   
 ### Custom Errors  
