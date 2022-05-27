@@ -42,7 +42,7 @@ An example that ties try/except/else/finally is provided by the Python documents
 We can give arguments to error types and save instances of our exceptions and their arguments as variables. Figure 5 provides a good example, from [https://www.programiz.com/python-programming/exception-handling](https://www.programiz.com/python-programming/exception-handling), that illustrates both how we can add arguments to exception errors and how we can retrieve both the exception error and argument. 
 	We can raise an error, which forces a specified exception to occur,  in the try  block and after stating it, we can add an argument in parentheses as a string. Then, in our except clause, we can state “except <error name> as <some variable name>,” followed by a colon. In the statements in that block, we can call on that variable and as shown in the example below, printing that variable will print the argument that we gave the error, rather than the error name itself. 
 	
- ![Figure 5](/docs/images/raisecustommessage.png?raw=true "Figure 5")  
+ ![Figure 5](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/raisecustommessage.png?raw=true "Figure 5")  
 **Figure 5: Exception Arguments and Variables—Source [https://www.programiz.com/python-programming/exception-handling](https://www.programiz.com/python-programming/exception-handling)**  
   
 ### Custom Errors  
@@ -50,7 +50,7 @@ We can give arguments to error types and save instances of our exceptions and th
 Python also allows user to build subclasses of exceptions that are derived from the built-in python exceptions.  Typically, these should come from the Exception class (or subclass). 	
 Once a class is named and defined, then we can use it like any of the prebuilt python error classes. Figure 6 below illustrates an example of defining a custom error class and executing it.
 	
-![Figure 6](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/customerror.png "Figure 6")  
+![Figure 6](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/customerror.png?raw=true "Figure 6")  
 **Figure 6: Custom Error Classes –Source [https://www.tutorialspoint.com/python/python_exceptions.htm](https://www.tutorialspoint.com/python/python_exceptions.htm)**  
   
 ## Pickling  
@@ -66,17 +66,17 @@ A disadvantage of unpickling is if this is done on a file not obtained from a tr
   My script simply asks the user whether s/he would like to add some data to a list, save data, read it, or exit. This is fairly similar to what we have been doing in assignments thus far.  
 	I use custom functions to separate my data processing from my presentation. In my functions, I have functions for saving and reading data. These not only pickle or unpickle data, respectively, but they also include a try/except block to catch errors. This can happen when no file with such a name exists, as with reading a file, or, more rarely, if there is some obscure problem in the file name or data (essentially the arguments) for saving the data.   
 
- ![Figure 7](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptreadwrite.png "Figure 7")  
+ ![Figure 7](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptreadwrite.png?raw=true "Figure 7")  
 **Figure 7: Pickling and Unpickling with Try/Except blocks**
   
   My 'add data or numbers to list option' uses the most functions. It first asks the user to enter two numbers, then asks user which operations s/he wants to conduct on them, and then lastly, it adds the resulting sum, different, product, or quotient to the list of data.  
   I use try/except blocks to catch if the user does not enter the appropriate integers. Figure 8 is an example of the more complex of these functions. The function gives the user a menu of math operations, and then runs a loop which while True, “tries” to get the user’s options. Now, if the user chooses an option that cannot be converted into an integer, one of the following exceptions occurs: ValueError or TypeError. If the user does choose an integer but it is not between 1-4, then I raise the Exception with the argument “Choose 1,2,3, or 4."
   
-![Figure 8](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptmathopchoice.png "Figure 8")  
+![Figure 8](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptmathopchoice.png?raw=true "Figure 8")  
 **Figure 8: Getting User Input on Mathematical Operations**
   
  
-![Figure 9](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptmain.png "Figure 9")   
+![Figure 9](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptmain.png?raw=true "Figure 9")   
 **Figure 9: Main script of Assignment07.py**
   
 For the 4th exit option, the program does what we have been doing thus far: it asks the user if s/he wants to quit, if the user says yes, it breaks out of the main loop, but if the user says no (or anything else), we return to the start of the main while loop.
@@ -85,12 +85,12 @@ For the 4th exit option, the program does what we have been doing thus far: it a
 
 I ran the script in both Pycharm and Windows OS CMD prompt shell. When running in PyCharm, I realized that my math_op() function was not catching the times I entered an integer 1-4, though it caught the errors if I entered something that could not be converted into integers. That was when I modified it by raising a custom error message letting the user know that they need to choose from the given options. Figure 10 below illustrates the program running with that error message showing up.
   
-![Figure 10](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptpycharmoutput.png "Figure 10")    
+![Figure 10](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptpycharmoutput.png?raw=true "Figure 10")    
 **Figure 10: PyCharm output showing custom error raised**
 
   Figure 11 below illustrates the program running in Windows OS console. Here, I have chosen to reload the data. Since I previously added data to the file, it unpickles it and then displays it as part of the read_file() function.
   
-![Figure 11](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptCMDoutput.png "Figure 11")   
+![Figure 11](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/myscriptCMDoutput.png?raw=true "Figure 11")   
 **Figure 11: Assignment07.py running in Windows Console**
 
 ## Summary
