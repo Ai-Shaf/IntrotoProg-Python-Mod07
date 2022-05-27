@@ -21,20 +21,20 @@ Each try block can have multiple exception blocks to catch and handle an error t
 Though, so far, this webpage has a useful sequence in starting by explaining common errors and how the try/except block works, it is too brief in its explanation of the try/except/else statement. We know that the else statement follows the except clauses and that it contains code that is executed if the try clause does not raise an exception. 
 The website [https://www.tutorialspoint.com/python/python_exceptions.htm](https://www.tutorialspoint.com/python/python_exceptions.htm) provides a clearer demonstration of how the else block functions. Figure 2 illustrates how these clauses would look together and the purpose of each.  The try block contains the operations we want to conduct, the except clauses try to catch possible exceptions and handle them, and then, if there are no exceptions in the try block, the else statement is executed.
 
-![Figure 2](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/tryexceptelse.png "Figure 2")
+![Figure 2](https://raw.githubusercontent.com/Ai-Shaf/IntrotoProg-Python-Mod07/main/docs/images/tryexceptelse.png "Figure 2")
  
 **Figure 2: Try/Except/Else –Source [https://www.tutorialspoint.com/python/python_exceptions.htm](https://www.tutorialspoint.com/python/python_exceptions.htm)**  
 
 We might question why we don’t simply include the else code in the try block? The prior python docs website directly address this: we want to make sure that the exceptions that we are catching are coming from the code that we have designated in the try block. We want to keep code that we haven’t planned out exceptions for separate from the code in the try block.
 As we saw, the else code only runs if the try code raised no exception. But we may want to have code run regardless of whether the try code ran an exception. This is done by using finally. The geeksforgeeks website [https://www.geeksforgeeks.org/python-exception-handling/](https://www.geeksforgeeks.org/python-exception-handling/) provides the clearest example of how we use finally (see Figure 3 below). If the try block raises an exception, the corresponding except block executes. Regardless of whether the try block raises an exception, the finally block is executed. 
 
-![Figure 3](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/tryexceptfinally.png "Figure 3")
+![Figure 3](https://raw.githubusercontent.com/Ai-Shaf/IntrotoProg-Python-Mod07/main/docs/images/tryexceptfinally.png "Figure 3")
  
 **Figure 3: Try/Except/Finally—Source: [https://www.geeksforgeeks.org/python-exception-handling/](https://www.geeksforgeeks.org/python-exception-handling/)**
 
 An example that ties try/except/else/finally is provided by the Python documents website in Figure 4.
 
- ![Figure 4](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/zerodivisionerror.png "Figure 4")
+ ![Figure 4](https://raw.githubusercontent.com/Ai-Shaf/IntrotoProg-Python-Mod07/main/docs/images/zerodivisionerror.png "Figure 4")
 **Figure 4: try/except/else/finally example –Source [https://docs.python.org/3/tutorial/errors.html](https://docs.python.org/3/tutorial/errors.html)**
 
 ### Exceptions and Arguments
@@ -42,7 +42,7 @@ An example that ties try/except/else/finally is provided by the Python documents
 We can give arguments to error types and save instances of our exceptions and their arguments as variables. Figure 5 provides a good example, from [https://www.programiz.com/python-programming/exception-handling](https://www.programiz.com/python-programming/exception-handling), that illustrates both how we can add arguments to exception errors and how we can retrieve both the exception error and argument. 
 	We can raise an error, which forces a specified exception to occur,  in the try  block and after stating it, we can add an argument in parentheses as a string. Then, in our except clause, we can state “except <error name> as <some variable name>,” followed by a colon. In the statements in that block, we can call on that variable and as shown in the example below, printing that variable will print the argument that we gave the error, rather than the error name itself. 
 	
- ![Figure 5](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/raisecustommessage.png "Figure 5")  
+ ![Figure 5](https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07/blob/main/docs/images/raisecustommessage.png?raw=true "Figure 5")  
 **Figure 5: Exception Arguments and Variables—Source [https://www.programiz.com/python-programming/exception-handling](https://www.programiz.com/python-programming/exception-handling)**  
   
 ### Custom Errors  
