@@ -2,7 +2,7 @@
 *05/25/2022*  
 *Foundations of Programming: Python*  
 *Assignment 07*  
-https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07  
+[https://github.com/Ai-Shaf/IntrotoProg-Python-Mod07  ]
 
 # Writing/Reading to File and Exception Handling
 
