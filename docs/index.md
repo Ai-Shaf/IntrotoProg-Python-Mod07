@@ -14,7 +14,7 @@ Though there are many websites that can be found to explain how error handling w
 Each try block can have multiple exception blocks to catch and handle an error that may result from the running of the try block. If the try block results in an error, the program checks to see if the error matches with that in the first except block, if not, it moves on to the next, etc. Once it finds an except block that identifies the error type, it executes that except block and then moves out of the try/except block. In a sense, it is breaking out of the sequence. For this reason, it is always better to keep the error type corresponding with the most general category at the end, so that if the narrowly defined except blocks don’t catch the error, the generally defined one can act as a “catch all.” However, we always want to try to find narrow definitions of the error to provide more useful information on how to circumvent the error.   
   See Figure 1 for an example where the base exception is listed at the bottom as a catch all. Because it is a catch-all, the downside is if we’re not vigilant, we might ignore errors that we need to account for elsewhere in our code as well.  
     
- ![Figure 1](/blob/main/docs/images/tryexceptmultiple.png "Figure 1")
+ ![Figure 1](/docs/images/tryexceptmultiple.png "Figure 1")
  
 **Figure 1: Source https://docs.python.org/3/tutorial/errors.**
 
